@@ -1,0 +1,479 @@
+/* =========================================
+   AGRIFLOW - MEMBER 2
+   ========================================= */
+
+
+/* RESET */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+
+    background: #f1f8f2;
+
+    color: #1f3d24;
+
+    min-height: 100vh;
+}
+
+
+/* =========================================
+   HEADER
+   ========================================= */
+
+.header {
+
+    background: #2e7d32;
+
+    color: white;
+
+    padding: 18px 50px;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+}
+
+
+.logo {
+
+    font-size: 30px;
+
+    font-weight: bold;
+}
+
+
+.header nav {
+
+    display: flex;
+
+    gap: 25px;
+}
+
+
+.header nav a {
+
+    color: white;
+
+    text-decoration: none;
+
+    font-size: 16px;
+
+    font-weight: bold;
+}
+
+
+.header nav a:hover {
+
+    text-decoration: underline;
+}
+
+
+/* =========================================
+   CONTAINER
+   ========================================= */
+
+.container {
+
+    width: 90%;
+
+    max-width: 900px;
+
+    margin: 40px auto;
+}
+
+
+/* =========================================
+   PAGE HEADER
+   ========================================= */
+
+.page-header {
+
+    margin-bottom: 25px;
+}
+
+
+.page-header h1 {
+
+    color: #1b5e20;
+
+    margin-bottom: 8px;
+}
+
+
+.page-header p {
+
+    color: #607d63;
+
+    font-size: 16px;
+}
+
+
+/* =========================================
+   CARD
+   ========================================= */
+
+.card {
+
+    background: white;
+
+    padding: 25px;
+
+    border-radius: 12px;
+
+    margin-bottom: 20px;
+
+    box-shadow:
+        0 3px 12px rgba(0, 0, 0, 0.08);
+}
+
+
+/* =========================================
+   FORM
+   ========================================= */
+
+.form-group {
+
+    margin-bottom: 20px;
+}
+
+
+.form-group label {
+
+    display: block;
+
+    margin-bottom: 8px;
+
+    font-weight: bold;
+
+    color: #315b36;
+}
+
+
+.input-with-voice {
+
+    display: flex;
+
+    gap: 8px;
+}
+
+
+.input-with-voice input {
+
+    flex: 1;
+
+    padding: 13px;
+
+    border: 1px solid #c5d8c7;
+
+    border-radius: 8px;
+
+    font-size: 16px;
+
+    outline: none;
+}
+
+
+.input-with-voice input:focus {
+
+    border-color: #2e7d32;
+}
+
+
+.voice-btn {
+
+    width: 48px;
+
+    border: none;
+
+    border-radius: 8px;
+
+    background: #e8f5e9;
+
+    cursor: pointer;
+
+    font-size: 20px;
+}
+
+
+.voice-btn:hover {
+
+    background: #c8e6c9;
+}
+
+
+/* =========================================
+   BUTTONS
+   ========================================= */
+
+.btn {
+
+    display: inline-block;
+
+    padding: 12px 20px;
+
+    border: none;
+
+    border-radius: 8px;
+
+    text-decoration: none;
+
+    cursor: pointer;
+
+    font-size: 15px;
+
+    font-weight: bold;
+}
+
+
+.primary-btn {
+
+    background: #2e7d32;
+
+    color: white;
+}
+
+
+.primary-btn:hover {
+
+    background: #1b5e20;
+}
+
+
+.secondary-btn {
+
+    background: #e8f5e9;
+
+    color: #2e7d32;
+
+    margin-top: 20px;
+}
+
+
+.secondary-btn:hover {
+
+    background: #c8e6c9;
+}
+
+
+.danger-btn {
+
+    background: #d32f2f;
+
+    color: white;
+}
+
+
+.danger-btn:hover {
+
+    background: #b71c1c;
+}
+
+
+/* =========================================
+   MY PRODUCE
+   ========================================= */
+
+.produce-card {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    gap: 20px;
+}
+
+
+.produce-info h2 {
+
+    color: #1b5e20;
+
+    margin-bottom: 10px;
+}
+
+
+.produce-info p {
+
+    margin-bottom: 6px;
+
+    color: #526653;
+}
+
+
+.produce-actions {
+
+    display: flex;
+
+    gap: 10px;
+}
+
+
+/* =========================================
+   CROP DETAILS
+   ========================================= */
+
+.detail-row {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    padding: 16px 0;
+
+    border-bottom: 1px solid #e0e0e0;
+}
+
+
+.detail-row span {
+
+    color: #607d63;
+}
+
+
+.detail-row strong {
+
+    color: #1b5e20;
+}
+
+
+/* =========================================
+   EMPTY STATE
+   ========================================= */
+
+.empty-state {
+
+    text-align: center;
+
+    padding: 50px 20px;
+}
+
+
+.empty-state h2 {
+
+    color: #2e7d32;
+
+    margin-bottom: 10px;
+}
+
+
+.empty-state p {
+
+    color: #607d63;
+}
+
+
+/* =========================================
+   BOTTOM ACTION
+   ========================================= */
+
+.bottom-action {
+
+    margin-top: 25px;
+
+    text-align: center;
+}
+
+
+/* =========================================
+   MOBILE
+   ========================================= */
+
+@media (max-width: 600px) {
+
+    .header {
+
+        padding: 15px 20px;
+
+        flex-direction: column;
+
+        gap: 12px;
+
+    }
+
+
+    .produce-card {
+
+        flex-direction: column;
+
+        align-items: flex-start;
+
+    }
+
+
+    .produce-actions {
+
+        width: 100%;
+    }
+
+
+    .produce-actions .btn {
+
+        flex: 1;
+
+        text-align: center;
+    }
+
+}
+/* Category Dropdown */
+
+#category,
+#unit {
+    flex: 1;
+    width: 100%;
+    padding: 13px 15px;
+    border: 1px solid #c5d8c7;
+    border-radius: 8px;
+    font-size: 16px;
+    background: white;
+    color: #1f3d24;
+    cursor: pointer;
+    outline: none;
+}
+
+#category:focus {
+    border-color: #2e7d32;
+}
+
+
+#category {
+    flex: 1;
+    width: 100%;
+    padding: 13px 15px;
+    border: 1px solid #c5d8c7;
+    border-radius: 8px;
+    font-size: 16px;
+    background: white;
+    color: #1f3d24;
+    cursor: pointer;
+    outline: none;
+}
+
+#category:focus {
+    border-color: #2e7d32;
+}
+
+.input-with-voice {
+    display: flex;
+    gap: 8px;
+}
+
+.voice-btn {
+    width: 48px;
+    min-width: 48px;
+    height: 48px;
+    border: none;
+    border-radius: 8px;
+    background: #e8f5e9;
+    cursor: pointer;
+    font-size: 20px;
+}
