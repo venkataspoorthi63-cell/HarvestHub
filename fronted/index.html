@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>AgriFlow - Crop Management</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>🌱 AgriFlow</h1>
+
+        <nav>
+            <a href="#produce">My Produce</a>
+            <a href="#add-crop">Add Crop</a>
+            <a href="#quality">Quality Check</a>
+        </nav>
+    </header>
+
+    <main>
+
+        <section class="hero">
+            <h2>Manage Your Crops</h2>
+            <p>
+                Add your crops, manage your produce,
+                and check crop quality easily.
+            </p>
+        </section>
+
+        <!-- Add Crop -->
+        <section class="card" id="add-crop">
+
+            <h2>➕ Add Crop</h2>
+
+            <form id="cropForm">
+
+                <label for="cropName">Crop Name</label>
+
+                <input
+                    type="text"
+                    id="cropName"
+                    placeholder="Example: Tomato"
+                    required
+                >
+
+                <label for="category">Category</label>
+
+                <select id="category" required>
+                    <option value="">Select Category</option>
+                    <option value="Vegetables">Vegetables</option>
+                    <option value="Fruits">Fruits</option>
+                    <option value="Grains">Grains</option>
+                    <option value="Pulses">Pulses</option>
+                    <option value="Spices">Spices</option>
+                    <option value="Other">Other</option>
+                </select>
+
+                <label for="quantity">Quantity</label>
+
+                <input
+                    type="number"
+                    id="quantity"
+                    placeholder="Enter quantity"
+                    min="1"
+                    required
+                >
+
+                <label for="unit">Unit</label>
+
+                <select id="unit" required>
+                    <option value="">Select Unit</option>
+                    <option value="kg">Kg</option>
+                    <option value="quintal">Quintal</option>
+                    <option value="ton">Ton</option>
+                    <option value="pieces">Pieces</option>
+                </select>
+
+                <button type="submit">
+                    Add Crop
+                </button>
+
+            </form>
+
+        </section>
+
+
+        <!-- My Produce -->
+        <section class="card" id="produce">
+
+            <h2>🌾 My Produce</h2>
+
+            <div id="produceList">
+                <p>No crops added yet.</p>
+            </div>
+
+        </section>
+
+
+        <!-- Quality Check -->
+        <section class="card" id="quality">
+
+            <h2>🔍 Quality Check</h2>
+
+            <p>
+                Add a crop first to perform the quality check.
+            </p>
+
+            <button type="button" onclick="qualityCheck()">
+                Check Quality
+            </button>
+
+            <div id="qualityResult"></div>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <p>© 2026 AgriFlow | Smart Agriculture Platform</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
